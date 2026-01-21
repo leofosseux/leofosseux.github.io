@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Léo Fosseux | BTS SIO SLAM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="brand">Léo Fosseux - BTS SIO SLAM - Alternant chez CCS ( Filiale du Crédit Mutuel ) </div>
+
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">A propos</a></li>
+                <li><a href="#bts" class="nav-link">BTS SIO</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#stage" class="nav-link">Alternance</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#engagement" class="nav-link">Engagement</a></li>
+                <li><a href="#projetpro" class="nav-link">Projet pro</a></li>
+                <li><a href="#softskills" class="nav-link">Soft skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== ACCUEIL / PRESENTATION ===================== -->
+    <section id="home" class="section-hero">
+        <canvas class="hero-bg" id="heroCanvas" aria-hidden="true"></canvas>
+
+        <div class="hero-inner container">
+            <div class="hero-profile">
+                <img src="image/leofosseux.jpg" alt="Photo de Léo Fosseux" class="profile-pic" />
+
+                <div class="hero-text">
+                    <p class="hero-eyebrow">PORTFOLIO BTS SIO SLAM</p>
+
+                    <h1 class="hero-title">Léo Fosseux</h1>
+                    <p class="hero-subtitle">Étudiant en BTS SIO option SLAM</p>
+
+                    <p class="hero-desc">
+                        Je suis actuellement étudiant à <strong>Diderot Éducation Lille</strong> en
+                        <strong>BTS Services Informatiques aux Organisations, option SLAM</strong>.<br>
+                        En parallèle, j’effectue mon <strong>alternance chez CCS (filiale du Crédit Mutuel)</strong>
+                        au poste de <strong>Service Assistance Matériel</strong>, où j’assure le support utilisateur
+                        et la gestion du matériel informatique.
+                    </p>
+
+                    <div class="hero-coords">
+                        <p><i class="fas fa-envelope"></i> leo.fosseux@coursdiderot.com</p>
+                        <p>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/leo-fosseux" target="_blank">
+                                https://fr.linkedin.com/in/leo-fosseux-085415268
+                            </a>
+                        </p>
+                        <p>
+                            
+                    </div>
+
+                    <div class="hero-actions">
+                    <a class="btn btn-primary" href="image/leofosseux2.jpg" target="_blank">
+    Télécharger mon CV
+</a>
+
+                        <a class="btn btn-outline" href="#projets">Voir mes projets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== A PROPOS ===================== -->
+    <section id="about" class="section-block">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+
+            <div class="card about-card reveal">
+                <p class="about-intro">
+                    Étudiant en deuxième année de BTS SIO option SLAM à Diderot Éducation Lille
+                </p>
+
+                <p>
+                    Je m'appelle <strong>Léo Fosseux</strong>, actuellement étudiant en deuxième année de BTS SIO
+                    option SLAM à Diderot Éducation, à Lille. En parallèle, je suis en
+                    <strong>alternance chez CCS (filiale du Crédit Mutuel)</strong>, au poste de
+                    <strong>Service Assistance Matériel</strong>. Mon rôle consiste à assister les utilisateurs,
+                    gérer le matériel informatique et diagnostiquer les incidents.
+                </p>
+
+                <p>
+                    Passionné depuis toujours par l’informatique, j’ai d’abord suivi un parcours
+                    dans l’électrotechnique (CAP, BEP, puis Bac Pro au lycée Pierre de Coubertin à Calais),
+                    avant de me réorienter vers l’informatique pour travailler dans un domaine plus technique et moderne.
+                </p>
+
+                <p>
+                    Le BTS SIO m’a permis d’apprendre le développement, la gestion d’incidents, la virtualisation et
+                    la conception de solutions logicielles. Mon alternance me permet d’appliquer ces connaissances sur le terrain.
+                </p>
+
+                <p>
+                    Mon objectif : poursuivre mes études en Bachelor informatique, puis me spécialiser
+                    en <strong>cybersécurité</strong>, un domaine qui me passionne.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== BTS SIO ===================== -->
+    <section id="bts" class="section-block">
+        <div class="container">
+            <h2 class="section-title">BTS SIO</h2>
+
+            <div class="bts-top">
+                <div class="bts-text reveal">
+                    <p>
+                        Le BTS SIO (Services Informatiques aux Organisations) est un diplôme Bac+2 formant des
+                        spécialistes capables de développer, maintenir et sécuriser des solutions informatiques.
+                    </p>
+                    <p>
+                        Deux options :
+                        <strong>SISR</strong> (réseau / infra / systèmes) et <strong>SLAM</strong> (développement d’applications).
+                    </p>
+                    <p>
+                        Je suis en <strong>option SLAM</strong>, axée sur la programmation, la base de données,
+                        et la mise à disposition de solutions aux utilisateurs.
+                    </p>
+                </div>
+                <div class="bts-img reveal">
+                    <img src="image/BTS SIO.png" alt="BTS SIO" />
+                </div>
+            </div>
+
+            <div class="bts-grid">
+                <article class="bts-card reveal">
+                    <h3 class="bts-card-title">Option SISR</h3>
+                    <img src="image/option sisr.png" class="bts-card-img" alt="Option SISR" />
+                    <p class="bts-card-text">
+                        Administration des systèmes, virtualisation, sécurité réseau, supervision et maintenance.
+                    </p>
+                    <a class="btn btn-outline"
+                    target="_blank"
+                    href="https://www.onisep.fr/Ressources/univers-formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux">
+                        Lire la suite
+                        </a>
+                </article>
+
+                <article class="bts-card reveal">
+                    <h3 class="bts-card-title">Option SLAM</h3>
+                    <img src="image/option slam.jpg" class="bts-card-img" alt="Option SLAM" />
+                    <p class="bts-card-text">
+                        Conception et développement d’applications (web, logiciels), gestion de données et sécurité.
+                    </p>
+                    <a class="btn btn-outline"
+                    target="_blank"
+                    href="https://www.onisep.fr/Ressources/univers-formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers">
+                        Lire la suite
+                        </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section id="cv" class="section-block">
+    <div class="container">
+        <h2 class="section-title">CV</h2>
+
+        <div class="card reveal cv-card">
+            <!-- FORMATION -->
+            <h3>Formation</h3>
+            <ul class="list">
+                <li>
+                    <strong>2024 – 2026 :</strong>
+                    BTS Services Informatiques aux Organisations – option SLAM<br>
+                    <span>Diderot Éducation Lille</span>
+                </li>
+                <li>
+                    <strong>2021 – 2024 :</strong>
+                    Bac Professionnel Électrotechnique, Énergie, Équipements Communicants (MELEC)<br>
+                    <span>Lycée Pierre de Coubertin, Calais</span>
+                </li>
+                <li>
+                    <strong>Avant 2021 :</strong>
+                    CAP puis BEP Électrotechnique
+                </li>
+            </ul>
+
+            <!-- EXPERIENCES PRO -->
+            <h3>Expériences professionnelles</h3>
+            <ul class="list">
+                <li>
+                    <strong>Depuis septembre 2024 :</strong>
+                    Alternance – Assistant Utilisateurs / Service Assistance Matériel (SAM)<br>
+                    <span>CCS – Filiale du Crédit Mutuel</span><br>
+                    Support utilisateur (téléphonique & physique), diagnostic et résolution d’incidents
+                    matériels et réseau, gestion des postes de travail, environnement Microsoft
+                    (Office, messagerie), téléphonie fixe et mobile.
+                </li>
+            </ul>
+
+            <!-- COMPETENCES TECHNIQUES -->
+            <h3>Compétences techniques</h3>
+
+            <p><strong>Bloc 1 – Support & infrastructure</strong></p>
+            <ul class="list">
+                <li>GLPI : gestion de parc et des tickets d’incidents</li>
+                <li>Proxmox : virtualisation de serveurs (Linux)</li>
+                <li>Windows Server : AD, DNS, DHCP (bases)</li>
+                <li>Linux (Debian) : commandes de base, gestion des utilisateurs et droits</li>
+                <li>Cisco Packet Tracer : adressage IP, routage simple</li>
+                <li>Installation et préparation de postes, diagnostic matériel et réseau</li>
+            </ul>
+
+            <p><strong>Bloc 2 – Développement (SLAM)</strong></p>
+            <ul class="list">
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>PHP (bases, formulaires simples)</li>
+                <li>Git & GitHub (gestion de versions)</li>
+                <li>Création d’un mini site vitrine (HTML / CSS / JS)</li>
+            </ul>
+
+            <p><strong>Bloc 3 – Cyber / sécurité</strong></p>
+            <ul class="list">
+                <li>Bases de sécurisation de postes utilisateurs</li>
+                <li>Gestion de permissions et droits d’accès</li>
+                <li>Bonnes pratiques de sécurité (mots de passe, mises à jour, etc.)</li>
+            </ul>
+
+            <!-- CERTIFICATIONS -->
+            <h3>Certifications</h3>
+            <ul class="list">
+                <li>À ce jour : aucune certification obtenue – section à compléter au cours de la formation.</li>
+            </ul>
+
+            <!-- BOUTON DE TELECHARGEMENT -->
+            <a class="btn btn-primary" href="image/leofosseux2.jpg" download>
+                Télécharger mon CV
+            </a>
+        </div>
+    </div>
+</section>
+
+
+  
+
+    <section id="projets" class="section-block">
+  <div class="container">
+    <h2 class="section-title">Projets</h2>
+
+    <!-- Onglets -->
+    <div class="projects-tabs">
+      <button class="tab-btn active" data-tab="formation">Projets de formation (BTS SIO)</button>
+      <button class="tab-btn" data-tab="perso">Projets personnels</button>
+      <button class="tab-btn" data-tab="tp">TP (Travaux Pratiques)</button>
+    </div>
+
+    <!-- ===================== FORMATION ===================== -->
+    <div class="tab-content active" id="formation">
+      <div class="projects-grid-v2">
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">📁</div>
+            <h3>Portfolio</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              Mon portfolio BTS SIO SLAM (site web) présentant mon parcours, mes projets et mes compétences.
+            </p>
+
+            <div class="proj-badges">
+              <span class="proj-badge">📅 2025-2026</span>
+              <span class="proj-badge">🎓 BTS SIO SLAM</span>
+              <span class="proj-badge">🧩 Développement Web</span>
+            </div>
+
+            <div class="proj-tags">
+              <span class="proj-tag">HTML</span>
+              <span class="proj-tag">CSS</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+
+            <div class="proj-actions">
+              <a class="proj-link" href="#" target="_blank" rel="noopener">Voir le site</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===================== PROJETS PERSO ===================== -->
+    <div class="tab-content" id="perso">
+      <div class="projects-grid-v2">
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">🧩</div>
+            <h3>Aucun projet perso pour le moment</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              Cette section sera complétée avec mes projets personnels.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===================== TP ===================== -->
+    <div class="tab-content" id="tp">
+      <div class="projects-grid-v2">
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">🛡️</div>
+            <h3>TP CSRF</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              TP sur l’attaque CSRF et la mise en place de protections (tokens, sessions, validations).
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">Sécurité Web</span>
+              <span class="proj-tag">CSRF</span>
+            </div>
+
+           <div class="proj-actions">
+  <a class="proj-link"
+     href="TP%20PROJETS/TP%20CSRF/Compte%20rendu.pdf"
+     target="_blank"
+     rel="noopener">
+     Compte rendu
+  </a>
+
+  <a class="proj-link"
+     href="TP%20PROJETS/TP%20CSRF/Sécurisation.pdf"
+     target="_blank"
+     rel="noopener">
+     Sécurisation
+  </a>
+</div>
+
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">👤</div>
+            <h3>TP Gestion Utilisateurs Cyber</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              TP sur la gestion des utilisateurs, permissions, sécurité et bonnes pratiques (cyber).
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">Sécurité</span>
+              <span class="proj-tag">Comptes</span>
+              <span class="proj-tag">Permissions</span>
+            </div>
+
+            <div class="proj-actions">
+              <a class="proj-link"
+   href="TP%20PROJETS/TP%20GESTION%20UTILISATEURS%20CYBER/tp-gestion-utilisation.pdf"
+   target="_blank"
+   rel="noopener">
+   Voir le TP
+</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">🛠️</div>
+            <h3>TP GLPI</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              TP sur GLPI : ticketing, inventaire, gestion de parc informatique.
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">GLPI</span>
+              <span class="proj-tag">Support</span>
+              <span class="proj-tag">Parc IT</span>
+            </div>
+
+            <div class="proj-actions">
+              <a class="proj-link"
+   href="TP%20PROJETS/TP%20GLPI/TP%20GLPI.pdf"
+   target="_blank"
+   rel="noopener">
+   Voir le TP
+</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">🐧</div>
+            <h3>TP Linux</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              TP Linux (Debian) : commandes, gestion utilisateurs/droits, système.
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">Linux</span>
+              <span class="proj-tag">Debian</span>
+              <span class="proj-tag">Admin</span>
+            </div>
+
+            <div class="proj-actions">
+              <a class="proj-link"
+   href="TP%20PROJETS/TP%20LINUX/TP%20UBUNTU%20SOUS%20VIRTUAL%20BOX%20leo%20fosseux.pdf"
+   target="_blank"
+   rel="noopener">
+   Voir le TP
+</a>
+
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-head">
+            <div class="proj-ico">🪟</div>
+            <h3>TP Windows Server 2025</h3>
+          </div>
+
+          <div class="proj-body">
+            <p class="proj-desc">
+              TP Windows Server : Active Directory, services réseau, administration.
+            </p>
+
+            <div class="proj-tags">
+              <span class="proj-tag">Windows Server</span>
+              <span class="proj-tag">AD</span>
+              <span class="proj-tag">Réseau</span>
+            </div>
+
+            <div class="proj-actions">
+             <a class="proj-link"
+   href="TP%20PROJETS/TP%20WINDOWS%20SERVER%202025/tp_windows_server_2025.pdf"
+   target="_blank"
+   rel="noopener">
+   Voir le TP
+</a>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ===================== ALTERNANCE ===================== -->
+<section id="alternance" class="section-block alt-section">
+  <div class="container">
+
+    <h2 class="alt-title">Alternance</h2>
+    <p class="alt-subtitle">CCS (filiale du Crédit Mutuel) — Lille</p>
+
+    <div class="alt-grid">
+
+      <!-- Présentation entreprise -->
+      <article class="alt-card reveal">
+        <div class="alt-card-head">
+          <div class="alt-ico">🏢</div>
+          <h3>Présentation de la structure</h3>
+        </div>
+
+        <div class="alt-card-body">
+          <p>
+            Le <strong>Centre de Conseil et de Service (CCS)</strong> est un centre de métiers au service
+            des fédérations et banques du <strong>Crédit Mutuel Alliance Fédérale</strong>. 
+            Il intervient notamment sur des activités liées à la production bancaire, la logistique et les supports.
+          </p>
+
+          <div class="alt-info">
+            <div class="alt-badge">📍 Lille</div>
+            <div class="alt-badge">🏦 Crédit Mutuel</div>
+            <div class="alt-badge">🧩 Support & Services</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mission principale -->
+      <article class="alt-card reveal">
+        <div class="alt-card-head">
+          <div class="alt-ico">🎯</div>
+          <h3>Mission principale</h3>
+        </div>
+
+        <div class="alt-card-body">
+          <p>
+            En tant que <strong>Télé-Assistant Utilisateurs</strong> au <strong>Service Assistance Matériel (SAM)</strong>,
+            j’interviens pour résoudre des problématiques techniques rencontrées par les utilisateurs :
+            outils informatiques, réseau, imprimantes, automates, environnement Microsoft, téléphonie,
+            accès/identifiants, etc.
+          </p>
+
+          <div class="alt-highlight">
+            <strong>Objectif :</strong> diagnostiquer rapidement, résoudre à distance quand possible,
+            et orienter vers le bon niveau de support si nécessaire.
+          </div>
+        </div>
+      </article>
+
+      <!-- Activités & tâches -->
+      <article class="alt-card reveal alt-card-wide">
+        <div class="alt-card-head">
+          <div class="alt-ico">🛠️</div>
+          <h3>Activités & tâches spécifiques</h3>
+        </div>
+
+        <div class="alt-card-body">
+          <ul class="alt-list">
+            <li>Prise en charge des sollicitations via <strong>téléphone</strong> ou <strong>formulaire</strong>.</li>
+            <li>Priorisation des urgences et suivi des demandes différées.</li>
+            <li>Diagnostic précis du problème avec l’utilisateur, reformulation et collecte d’éléments.</li>
+            <li>Résolution en ligne des incidents dans mon périmètre de compétence.</li>
+            <li>Ouverture et transmission d’un incident correctement documenté vers :
+              <ul class="alt-sublist">
+                <li>le support de niveau 2,</li>
+                <li>ou le mainteneur / prestataire matériel.</li>
+              </ul>
+            </li>
+            <li>Interventions proactives sur certains équipements (ex : automates) : contrôles, manipulations guidées.</li>
+            <li>Enrichissement de la base de connaissances et mise à jour de la documentation (procédures, matériels).</li>
+            <li>Partage d’informations utiles avec l’équipe (retours, bonnes pratiques, points de vigilance).</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Savoir-être / savoir-faire -->
+      <article class="alt-card reveal">
+        <div class="alt-card-head">
+          <div class="alt-ico">🤝</div>
+          <h3>Savoir-être & savoir-faire</h3>
+        </div>
+
+        <div class="alt-card-body">
+          <ul class="alt-checks">
+            <li>Écoute active, analyse et synthèse des problèmes.</li>
+            <li>Capacité à expliquer clairement la solution et les étapes réalisées.</li>
+            <li>Travail en équipe et coordination avec les autres niveaux de support.</li>
+            <li>Aisance à l’oral et gestion de la relation utilisateur.</li>
+            <li>Rigueur : documentation des tickets, traçabilité et respect des procédures.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Outils / environnement (optionnel mais propre) -->
+      <article class="alt-card reveal">
+        <div class="alt-card-head">
+          <div class="alt-ico">💻</div>
+          <h3>Environnement</h3>
+        </div>
+
+        <div class="alt-card-body">
+          <div class="alt-tags">
+            <span class="alt-tag">Support utilisateurs</span>
+            <span class="alt-tag">Ticketing</span>
+            <span class="alt-tag">Windows</span>
+            <span class="alt-tag">Réseau</span>
+            <span class="alt-tag">Microsoft</span>
+            <span class="alt-tag">Téléphonie</span>
+          </div>
+
+          <p class="alt-note">
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VEILLE TECHNOLOGIQUE ===================== -->
+<section id="veille" class="section-block veille-section">
+  <div class="container">
+
+    <h2 class="veille-title">Veille Technologique</h2>
+    <p class="veille-subtitle">
+      Sécurité des applications web : bonnes pratiques & menaces actuelles
+    </p>
+
+    <div class="veille-top">
+
+      <!-- Sujet principal -->
+      <article class="veille-hero reveal">
+        <div class="veille-hero-icon">🔍</div>
+
+        <h3>Sujet principal : Sécuriser l’authentification et les API d’une application web moderne</h3>
+
+        <p>
+          Je réalise une veille orientée <strong>cas réels</strong> : les attaques ciblent souvent
+          les <strong>API</strong> et l’<strong>authentification</strong> (sessions, JWT), ainsi que les failles
+          fréquentes du <strong>OWASP Top 10</strong>.
+        </p>
+
+        <p>
+          Mon objectif : comprendre <strong>comment les failles arrivent</strong>, leurs impacts, puis
+          appliquer des protections <strong>côté serveur</strong> (contrôles d’accès, validation, configuration).
+        </p>
+
+        <div class="veille-hero-note">
+          <strong>Fil rouge :</strong> empêcher le <strong>Broken Access Control</strong>, sécuriser
+          <strong>sessions/JWT</strong> et réduire les risques OWASP (XSS / SQLi / CSRF).
+        </div>
+      </article>
+
+      <!-- Analyses -->
+      <article class="veille-analyses-v2 reveal">
+        <h3 class="veille-analyses-title">Analyses & Sujets Étudiés</h3>
+
+        <!-- Analyse 1 -->
+        <div class="analyse-v2">
+          <div class="analyse-v2-date">Janvier 2026</div>
+          <div class="analyse-v2-h">Broken Access Control (IDOR / BOLA) : la faille la plus fréquente sur les API</div>
+
+          <p class="analyse-v2-text">
+            Le “Broken Access Control” arrive quand le serveur ne vérifie pas correctement que l’utilisateur a le droit
+            d’accéder à une ressource. Très courant sur API : <strong>IDOR</strong> (Insecure Direct Object Reference) /
+            <strong>BOLA</strong> (Broken Object Level Authorization).
+          </p>
+
+          <div class="analyse-v2-list">
+            <p><strong>Exemple concret :</strong></p>
+            <ul>
+              <li>API : <span class="code-inline">GET /api/users/15</span></li>
+              <li>Un attaquant remplace 15 par 16 → <span class="code-inline">GET /api/users/16</span></li>
+              <li>Si le serveur ne contrôle pas le propriétaire, il récupère les données d’un autre compte.</li>
+            </ul>
+
+            <p><strong>Mesures concrètes (côté serveur) :</strong></p>
+            <ul>
+              <li>✅ Vérifier l’autorisation à chaque requête (règles “owner/admin”, RBAC/ABAC)</li>
+              <li>✅ Ne jamais faire confiance aux IDs envoyés par le client</li>
+              <li>✅ Journaliser les accès sensibles + alerte sur comportements suspects</li>
+            </ul>
+          </div>
+
+          <div class="analyse-v2-tags">
+            <span class="tag">API Security</span>
+            <span class="tag">OWASP</span>
+            <span class="tag">Accès</span>
+          </div>
+
+          <p class="analyse-v2-opinion">
+            <strong>Mon avis :</strong> c’est la faille “simple” mais critique : tout se joue dans les contrôles
+            d’autorisation serveur, pas dans l’interface.
+          </p>
+
+          <p class="analyse-v2-sources">
+            <strong>Sources :</strong>
+            <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener">OWASP Top 10</a> ·
+            <a href="https://owasp.org/www-project-api-security/" target="_blank" rel="noopener">OWASP API Security</a>
+          </p>
+        </div>
+
+        <!-- Analyse 2 -->
+        <div class="analyse-v2">
+          <div class="analyse-v2-date">Décembre 2025</div>
+          <div class="analyse-v2-h">Sessions & cookies : éviter le vol de session (session hijacking)</div>
+
+          <p class="analyse-v2-text">
+            Une session peut être compromise si les cookies sont mal configurés, si la session dure trop longtemps,
+            ou si l’application est exposée à XSS. L’objectif est de limiter l’exploitation en durcissant les cookies
+            et la gestion de session.
+          </p>
+
+          <div class="analyse-v2-list">
+            <p><strong>Mesures concrètes :</strong></p>
+            <ul>
+              <li>✅ Cookie <span class="code-inline">HttpOnly</span> (inaccessible en JS) + <span class="code-inline">Secure</span> (HTTPS)</li>
+              <li>✅ <span class="code-inline">SameSite=Lax</span> ou <span class="code-inline">Strict</span> pour réduire le CSRF</li>
+              <li>✅ Expiration + rotation d’identifiant de session après login</li>
+              <li>✅ Invalidation de session au logout / changement de mot de passe</li>
+            </ul>
+          </div>
+
+          <div class="analyse-v2-tags">
+            <span class="tag">Auth</span>
+            <span class="tag">Sessions</span>
+            <span class="tag">Cookies</span>
+          </div>
+
+          <p class="analyse-v2-opinion">
+            <strong>Mon avis :</strong> beaucoup de failles viennent de réglages “oubliés”.
+            Les attributs de cookies sont rapides à mettre en place et très efficaces.
+          </p>
+
+          <p class="analyse-v2-sources">
+            <strong>Sources :</strong>
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Cookies" target="_blank" rel="noopener">MDN Cookies</a> ·
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Set-Cookie" target="_blank" rel="noopener">MDN Set-Cookie</a>
+          </p>
+        </div>
+
+        <!-- Analyse 3 -->
+        <div class="analyse-v2">
+          <div class="analyse-v2-date">Novembre 2025</div>
+          <div class="analyse-v2-h">Injection SQL : comment elle arrive et comment l’empêcher (requêtes préparées)</div>
+
+          <p class="analyse-v2-text">
+            L’injection SQL arrive quand des entrées utilisateur sont concaténées dans une requête. L’attaquant peut
+            modifier la requête pour lire/modifier des données. La défense la plus fiable : <strong>requêtes préparées</strong>.
+          </p>
+
+          <div class="analyse-v2-list">
+            <p><strong>Exemple concret :</strong></p>
+            <ul>
+              <li>Champ “email” non filtré → la requête est construite en concaténation</li>
+              <li>Un payload peut détourner la logique si l’application ne prépare pas la requête</li>
+            </ul>
+
+            <p><strong>Mesures concrètes :</strong></p>
+            <ul>
+              <li>✅ Requêtes préparées (PDO / ORM)</li>
+              <li>✅ Validation côté serveur + principe du moindre privilège côté BDD</li>
+              <li>✅ Logs & monitoring sur erreurs SQL anormales</li>
+            </ul>
+          </div>
+
+          <div class="analyse-v2-tags">
+            <span class="tag">OWASP</span>
+            <span class="tag">SQLi</span>
+            <span class="tag">Backend</span>
+          </div>
+
+          <p class="analyse-v2-opinion">
+            <strong>Mon avis :</strong> c’est une faille historique, mais encore présente sur de nombreux projets
+            “petits” ou mal maintenus. Les requêtes préparées doivent être un réflexe.
+          </p>
+
+          <p class="analyse-v2-sources">
+            <strong>Sources :</strong>
+            <a href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank" rel="noopener">OWASP SQL Injection</a> ·
+            <a href="https://developer.mozilla.org/fr/docs/Learn/Server-side/First_steps/Website_security" target="_blank" rel="noopener">MDN Website security</a>
+          </p>
+        </div>
+
+      </article>
+    </div>
+
+    <!-- SOURCES & OUTILS -->
+    <article class="veille-sources-v2 reveal">
+      <h3 class="veille-sources-title">Sources & Outils de Veille</h3>
+
+      <div class="sources-v2-grid">
+
+        <div class="source-v2-card">
+          <div class="source-v2-ico">📚</div>
+          <h4>Références officielles</h4>
+          <ul>
+            <li>OWASP Top 10 + OWASP API Security</li>
+            <li>MDN Web Docs (cookies, headers, sécurité)</li>
+            <li>Guides ANSSI (bonnes pratiques)</li>
+          </ul>
+        </div>
+
+        <div class="source-v2-card">
+          <div class="source-v2-ico">🧪</div>
+          <h4>Mise en pratique</h4>
+          <ul>
+            <li>Mini-projets web (PHP/JS) + tests de sécurité</li>
+            <li>Checklists : auth, accès, validation serveur</li>
+            <li>Rédaction de synthèses (définition → exemple → impact → solution)</li>
+          </ul>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+    <!-- ===================== PROJET PROFESSIONNEL ===================== -->
+<section id="projet-pro" class="section-block pro-section">
+  <div class="container">
+
+    <h2 class="pro-title">Projet Professionnel</h2>
+    <p class="pro-subtitle">Vision, objectifs et plan d’action (CCS – Crédit Mutuel)</p>
+
+    <div class="pro-grid">
+
+      <!-- Court terme -->
+      <article class="pro-card reveal">
+        <div class="pro-head">
+          <div class="pro-ico">📅</div>
+          <h3>Court terme (0–12 mois)</h3>
+        </div>
+
+        <div class="pro-body">
+          <h4>Objectifs</h4>
+          <ul class="pro-list">
+            <li>Réussir mon BTS SIO (SLAM) et consolider mes bases techniques.</li>
+            <li>Monter en compétences au CCS (filiale du Crédit Mutuel) sur les sujets IT & sécurité.</li>
+            <li>Renforcer mes fondamentaux cybersécurité : réseau, systèmes, web et bonnes pratiques.</li>
+            <li>Documenter mes apprentissages (veille + mini-labs) pour progresser régulièrement.</li>
+          </ul>
+
+          <h4>Actions concrètes</h4>
+          <ul class="pro-list pro-list-check">
+            <li>Suivre une roadmap cybersécurité (réseau → systèmes → sécurité web → SOC/IR).</li>
+            <li>Mettre en pratique sur des labs : VM, Linux, durcissement, logs, vulnérabilités.</li>
+            <li>Échanger avec des profils cybersécurité en interne / demander du shadowing si possible.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Moyen terme -->
+      <article class="pro-card reveal">
+        <div class="pro-head">
+          <div class="pro-ico">🎯</div>
+          <h3>Moyen terme (1–3 ans)</h3>
+        </div>
+
+        <div class="pro-body">
+          <h4>Objectifs</h4>
+          <ul class="pro-list">
+            <li>Me spécialiser en cybersécurité après le BTS (alternance / poursuite d’études).</li>
+            <li>Être opérationnel sur des missions sécurité : durcissement, IAM, vulnérabilités, supervision.</li>
+            <li>Développer une vraie méthode : analyse de risques, priorisation, documentation.</li>
+            <li>Construire un portfolio cybersécurité (rapports, outils, projets sécurisés).</li>
+          </ul>
+
+          <h4>Actions concrètes</h4>
+          <ul class="pro-list pro-list-check">
+            <li>Obtenir une certification “fondations” (ex : Sec+, CCNA/Network+, ou équivalent).</li>
+            <li>Participer à des CTF / plateformes (TryHackMe, Hack The Box) + writeups.</li>
+            <li>Travailler des cas concrets : durcissement Windows/Linux, MFA, segmentation, SIEM basique.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Long terme -->
+      <article class="pro-card reveal">
+        <div class="pro-head">
+          <div class="pro-ico">🚀</div>
+          <h3>Long terme (3–5+ ans)</h3>
+        </div>
+
+        <div class="pro-body">
+          <h4>Objectifs</h4>
+          <ul class="pro-list">
+            <li>Évoluer vers un poste cybersécurité (SOC / Blue Team / GRC / AppSec selon affinité).</li>
+            <li>Devenir référent sur un périmètre (gestion vulnérabilités, réponse à incident, sécurité applicative…).</li>
+            <li>Contribuer à l’amélioration continue de la sécurité (process, sensibilisation, qualité).</li>
+            <li>Transmettre : documentation, partage interne, mentoring.</li>
+          </ul>
+
+          <h4>Actions concrètes</h4>
+          <ul class="pro-list pro-list-check">
+            <li>Approfondir un axe (Blue Team / AppSec / GRC) et viser une certification adaptée.</li>
+            <li>Participer à des projets transverses (audits, revues sécurité, conformité, outillage).</li>
+            <li>Maintenir une veille structurée + retours d’expérience en entreprise.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+   <!-- ===================== SOFT SKILLS ===================== -->
+<section id="soft-skills" class="section-block soft-section">
+  <div class="container">
+
+    <h2 class="soft-title">Soft Skills</h2>
+    <p class="soft-subtitle">Compétences transversales</p>
+
+    <!-- Pills Soft Skills -->
+    <div class="soft-pills reveal">
+      <span class="soft-pill">Travail d’équipe</span>
+      <span class="soft-pill">Autonomie</span>
+      <span class="soft-pill">Curiosité</span>
+      <span class="soft-pill">Rigueur</span>
+      <span class="soft-pill">Créativité</span>
+      <span class="soft-pill">Adaptabilité</span>
+    </div>
+
+    <!-- Expériences -->
+    <article class="soft-experiences reveal">
+      <h3>Développées grâce à mes expériences</h3>
+
+      <div class="soft-exp-grid">
+
+
+
+        <div class="soft-exp-card">
+          <div class="soft-exp-ico">🌍</div>
+          <h4>Bulgarie</h4>
+          <p>
+            Autonomie, adaptabilité et ouverture culturelle
+            développées lors de mes voyages à l’étranger.
+          </p>
+        </div>
+
+        <div class="soft-exp-card">
+          <div class="soft-exp-ico">💼</div>
+          <h4>Alternance</h4>
+          <p>
+            Curiosité technique, professionnalisme et capacité
+            à m’intégrer rapidement dans un environnement de travail.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-block">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="card contact-card reveal">
+                <p class="contact-infos">
+                    <i class="fas fa-envelope"></i> leo.fosseux@coursdiderot.com<br>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://fr.linkedin.com/in/leo-fosseux-085415268" target="_blank">
+                        https://fr.linkedin.com/in/leo-fosseux-085415268
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <p>© 2025 - Portfolio Léo Fosseux | BTS SIO SLAM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

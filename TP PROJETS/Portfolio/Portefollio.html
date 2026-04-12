@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Leo Fosseux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #2575fc;
+        }
+
+        section {
+            padding: 20px;
+            margin: 80px auto 20px; /* Adjust margin for fixed nav */
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            opacity: 0.98;
+        }
+
+        h1, h2 {
+            color: #2575fc;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .testimonials {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            font-style: italic;
+            border-left: 4px solid #2575fc;
+            padding-left: 15px;
+            color: #555;
+        }
+
+        ul li {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+            color: white;
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form input:focus, form textarea:focus {
+            outline: none;
+            border: 1px solid #2575fc;
+            box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+        }
+
+        form button {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+        }
+
+        .video-section {
+            text-align: center;
+        }
+
+        .video-section a {
+            color: #2575fc;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .video-section a:hover {
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio personnel de Léo Fosseux</h1>
+        <p>Etudiant de première année de BTS option SLAM ( TP avec M. BENCHEIKH).</p>
+        <img src="diderot.jpg" alt="Photo de Leo Fosseux" class="profile-img">
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projets</a>
+        <a href="#videos">Vidéo IA</a>
+        <a href="#veille">Veille Technologique</a>
+        <a href="#testimonials">Témoignages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>À propos de moi</h2>
+        <p><strong>Nom Prénom :</strong> Léo Fosseux</p>
+        <p>Étudiant en première année de BTS SIO SLAM, je suis passionné par l'informatique et la sécurité réseau. Mon objectif est de maîtriser les outils modernes tout en comprenant les bases des systèmes informatiques hérités.</p>
+    </section>
+
+    <section id="services">
+        <h2>Mes compétences</h2>
+        <ul>
+            <li>Initiation au développement web : HTML, CSS.</li>
+            <li>Programmation : Bases en Python et SQL.</li>
+            <li>Conception de bases de données relationnelles.</li>
+            <li>Découverte des réseaux et protocoles (IP, TCP/UDP).</li>
+            <li>Utilisation de systèmes d'exploitation : Windows et Linux (commandes de base).</li>
+            <li>Gestion et maintenance de postes informatiques.</li>
+            <li>Travail collaboratif avec des outils tels que Git et GitHub.</li>
+            <li>Windows Server : Gestion des utilisateurs et des ressources.</li>
+            <li>GLPI : Gestion des tickets et inventaire.</li>
+            <li>Installation et configuration de machines virtuelles.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projets récents</h2>
+        <table>
+            <tr>
+                <th>Nom du projet</th>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Création d'un Portfolio</td>
+                <td>Un projet HTML pour présenter mes compétences et mes projets.</td>
+                <td>Janvier 2025</td>
+            </tr>
+            <tr>
+                <td>Initiation à Windows Server</td>
+                <td>Configuration de comptes utilisateurs et gestion des droits d'accès.</td>
+                <td>Novembre 2024</td>
+            </tr>
+            <tr>
+                <td>Développement d'une base de données relationnelle</td>
+                <td>Conception et implémentation d'une base de données pour un suivi de clients.</td>
+                <td>Novembre 2024</td>
+            </tr>
+            <tr>
+                <td>Découverte de GLPI</td>
+                <td>Mise en place d'un outil de gestion des tickets et inventaire informatique.</td>
+                <td>Octobre 2024</td>
+            </tr>
+            <tr>
+                <td>Configuration de Proxiserver</td>
+                <td>Mise en place et configuration d'un proxy pour le contrôle d'accès réseau.</td>
+                <td>Octobre 2024</td>
+            </tr>
+            <tr>
+                <td>Installation et découverte d'Ubuntu</td>
+                <td>Installation et exploration des fonctionnalités de base du système Linux Ubuntu.</td>
+                <td>Novembre 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="videos" class="video-section">
+        <h2>Vidéo IA</h2>
+        <p>Découvrez cette vidéo informative sur l'intelligence artificielle :</p>
+        <a href="https://www.youtube.com/watch?v=_kcnrG6Yxfo&pp=ygUXdG9wIDEwIGlhICBpbmZvcm1hdGlxdWU%3D" target="_blank">Regarder la vidéo</a>
+    </section>
+
+    <section id="veille">
+        <h2>Veille Technologique : COBOL</h2>
+        <p><strong>Projet :</strong> Découverte et Application d'une Technologie Historique – COBOL</p>
+        <p><strong>Contexte :</strong> Dans le cadre de ma formation en BTS, j'ai exploré COBOL, un langage de programmation créé dans les années 1960 et toujours utilisé dans les systèmes bancaires, gouvernementaux et de gestion des entreprises. Ce projet m'a permis de comprendre l'importance des systèmes hérités et leur impact dans le monde professionnel actuel.</p>
+        <h3>Objectifs :</h3>
+        <ul>
+            <li>Découvrir les bases de la programmation en COBOL.</li>
+            <li>Créer un programme fonctionnel qui reflète l'utilisation de COBOL dans des environnements professionnels.</li>
+            <li>Comprendre comment moderniser des systèmes existants en interfaçant COBOL avec des technologies modernes.</li>
+        </ul>
+        <h3>Réalisations :</h3>
+        <ul>
+            <li>Développement d'une application simple en COBOL pour gérer une base de données de clients fictive :</li>
+            <ul>
+                <li>Gestion des informations clients (nom, prénom, solde).</li>
+                <li>Simulation de transactions bancaires (dépôts, retraits).</li>
+                <li>Génération de rapports simples.</li>
+            </ul>
+            <li>Intégration avec Python pour démontrer la communication entre systèmes modernes et anciens.</li>
+        </ul>
+        <h3>Ce que j'ai appris :</h3>
+        <ul>
+            <li>L'importance des systèmes hérités dans les infrastructures critiques.</li>
+            <li>Les bases de COBOL, un langage structuré avec une syntaxe orientée business.</li>
+            <li>Comment les entreprises modernisent leurs outils tout en s'appuyant sur des technologies anciennes.</li>
+        </ul>
+        <h3>Technologies utilisées :</h3>
+        <ul>
+            <li><strong>COBOL :</strong> Programmation de l'application.</li>
+            <li><strong>Python :</strong> Création d'une interface simple pour interagir avec le programme COBOL.</li>
+            <li><strong>Visual Studio Code :</strong> Environnement de développement.</li>
+        </ul>
+        <h3>Conclusion :</h3>
+        <p>Ce projet m'a permis de découvrir une technologie historique tout en développant des compétences polyvalentes et en renforçant ma compréhension des défis de la modernisation informatique. Cela me prépare à aborder des problématiques complexes dans des environnements professionnels réels.</p>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonial">
+            <p>"Léo Fosseux est un excellent étudiant en BTS SIO SLAM. Sa passion et sa détermination à exceller dans le domaine de la cybersécurité et des réseaux sont impressionnantes. Je suis convaincu qu'il deviendra un expert reconnu dans ces domaines."</p>
+            <p><strong>- Client 1</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Avec ses compétences et son engagement, Léo Fosseux a déjà démontré un grand potentiel. Il a toutes les qualités nécessaires pour réussir dans sa carrière en informatique et devenir un leader dans les technologies réseau."</p>
+            <p><strong>- Client 2</strong></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Leo Fosseux. Tous droits réservés avec l'école Diderot.</p>
+    </footer>
+</body>
+</html>
+
+
